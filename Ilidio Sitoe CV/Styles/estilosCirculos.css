@@ -1,0 +1,25 @@
+#circulo1 {
+    background: radial-gradient(circle closest-side,#f00 0%, #0bc4ff 98%,rgba(0,0,0,0) 100%);
+}
+
+#circulo2 {
+    background: radial-gradient(circle closest-side,
+    #999 0%,#999 74%,#e00 76%, #1d8cee 98%,rgba(0,0,0,0) 100%);
+}
+
+#circulo3 {
+    background:radial-gradient(circle closest-side,
+    rgba(0, 0, 0, 0.29) 0%, rgba(29, 140, 238, 1) 78%, #a9c0ff 80%, rgba(253, 255, 255, 0.57) 94%,
+    #36f 96%,#36f 99%, #fdffff 100%),
+    url(https://i.stack.imgur.com/MVmIb.png) no-repeat center/160px 160px;
+}
+
+body {background-color:#fff}
+div {width:160px;height:160px;float:left;margin:10px}
+
+h3{
+    text-decoration: blue;
+    text-align: center;
+    margin-top: 40%;
+    color: white;
+}

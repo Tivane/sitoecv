@@ -1,0 +1,395 @@
+body{
+    margin: 0;
+    padding: 5px;
+    font-family: sans-serif;
+    background-image: url("../plano-de-fundo-2-660x365.png");
+}
+
+header{
+    background: lightskyblue;
+    width: 100%;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+    margin: 5px auto;
+}
+
+footer{
+    background-color: lightskyblue;
+    width: 100%;
+    padding: 40px 0;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    margin: 5px auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+nav ul{
+    background-color: skyblue;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    -webkit-transition: max-height 0.4s;
+    -ms-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    -o-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+}
+
+nav ul li{
+
+    display: inline-block;
+    padding: 20px;
+    border: solid 1px white;
+
+}
+
+nav ul li:hover{
+    background-color: rgb(0,0,153);
+}
+
+section{
+    line-height: 1.5em;
+    font-size: 1.2em;
+    padding: 40px;
+    width: 75%;
+    height: 400px;
+    margin: 5px auto;
+    border: solid 5px white;
+    background: rgb(25, 152, 153);
+
+
+}
+
+.circulos{
+
+    line-height: 1.5em;
+    font-size: 1.2em;
+    padding: 40px;
+    width: 75%;
+    height: 400px;
+    margin: 5px auto;
+    border: solid 5px white;
+    background: rgb(25, 152, 153);
+    display: flex;flex-direction: row;
+
+}
+
+.handle{
+    width: 100%;
+    background: #068299;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: white;
+    display: none;
+    border-radius: 50% 50% 50% 50%;
+}
+
+img{
+    width: 100%;
+    border-radius: 50% 50% 50% 50%;
+
+}
+
+.imagemPerfil{
+    margin-right: 30%;
+    margin-left: 30%;
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+}
+
+/*ZOOM DE IMAGEM DE PERFIL*/
+
+
+.imagemPerfil img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.imagemPerfil:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+
+@media screen and (max-width: 800px){
+
+    section{
+
+        margin-right: 0.5%;
+        margin-left: 0.5%;
+        height: auto;
+    }
+
+    .circulos{
+        margin-right: 0.5%;
+        margin-left: 0.5%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 580px){
+
+    nav ul{
+        max-height: 0;
+        background-color: transparent;
+        color: white;
+    }
+
+    .showing{
+        max-height: 20em;
+    }
+
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .handle{
+        display: block;
+    }
+
+    div{
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+
+    section{
+
+        margin-right: 0.5%;
+        margin-left: 0.5%;
+        height: auto;
+    }
+
+    .circulos{
+        margin-right: 0.5%;
+        margin-left: 0.5%;
+        height: auto;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width: 240px){
+    nav ul{
+        max-height: 0;
+        background-color: transparent;
+        color: lightskyblue;
+    }
+
+    .showing{
+        max-height: 20em;
+    }
+
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .handle{
+        display: block;
+    }
+
+    div{
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+
+    section{
+
+        margin-right: 0.5%;
+        margin-left: 0.5%;
+        height: auto;
+    }
+
+    .circulos{
+        margin-right: 0.5%;
+        margin-left: 0.5%;
+        height: auto;
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+
+section h1 pre,p{
+
+    color: white;
+    padding: 2px;
+    display: contents;
+
+
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+
+
+}
+
+h3{
+    color: #0f284b;
+    padding: 2px;
+    display: contents;
+
+}
+
+
+
+/*CIRCULOS DE INFORMACAO COMPLEMENTAR*/
+
+#circulo1 {
+    background: radial-gradient(circle closest-side,#f00 0%, #0bc4ff 98%,rgba(0,0,0,0) 100%);
+    text-align: center;
+}
+
+#circulo2 {
+    background: radial-gradient(circle closest-side,
+    #999 0%,#999 74%,#e00 76%, #1d8cee 98%,rgba(0,0,0,0) 100%);
+    text-align: center;
+}
+
+#circulo3 {
+    background:radial-gradient(circle closest-side,
+    rgba(0, 0, 0, 0.29) 0%, rgba(29, 140, 238, 1) 78%, #a9c0ff 80%, rgba(253, 255, 255, 0.57) 94%,
+    #36f 96%,#36f 99%, rgb(25, 152, 153) 100%),
+    url(https://i.stack.imgur.com/MVmIb.png) no-repeat center/160px 160px;
+    text-align: center;
+
+}
+
+#circulo4 {
+    background: radial-gradient(circle closest-side,#f00 0%, #0bc4ff 98%,rgba(0,0,0,0) 100%);
+    text-align: center;
+}
+
+
+#circulo1,#circulo2,#circulo3,#circulo4 {
+    width:160px;
+    height:160px;
+    margin:10px;
+    line-height: 160px;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+
+
+/* Table Base */
+
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: arial;
+}
+
+.table {
+    border-bottom: #999999 solid 1px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    border-right: #999999 solid 1px;
+    font-size: 12px;
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.table td:last-child {
+    border-right: 0;
+}
+
+.table thead th {
+    font-weight: normal;
+    background-color: #005dab;
+    color: #fff;
+    font-size: 15px;
+}
+
+.table tbody > tr:nth-child(odd) > td,
+.table tbody > tr:nth-child(odd) > th {
+    background-color: #f8f8f8;
+}
+
+
+/* Small Sizes */
+@media (max-width: 767px) {
+
+    /* Responsive Table */
+    .table-responsive {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    .table-responsive thead,
+    .table-responsive tbody,
+    .table-responsive th,
+    .table-responsive td,
+    .table-responsive tr {
+        display: block;
+    }
+    .table-responsive td,
+    .table-responsive th {
+        height: 35px;
+    }
+
+    .table-responsive thead {
+        float: left;
+    }
+
+    .table-responsive tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+
+    .table-responsive tbody tr {
+        display: inline-block;
+    }
+
+
+    .table td:last-child {
+        border-right: #999999 solid 1px;
+    }
+
+
+}
+
+
+
+
+
+
